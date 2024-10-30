@@ -1,17 +1,15 @@
 ﻿# BabyLM 2024 shared task @ NeTS 
 
-In repository contains the data related to our participation to the [BabyLM 2024](https://babylm.github.io/) competition.
+This repository contains the data related to our participation to the [BabyLM 2024](https://babylm.github.io/) competition.
 
 ### 01-preprocess
-This folder contains our preprocessing procedure. 
-We decided to minimally clean the data source by removing any metalinguistic 
+This folder contains our data preprocessing procedures. We performed minimal cleaning on the data source, focusing on removing metalinguistic elements.
 
 ### 02-tokenization
-You will find here an original tokenizer, dubbed **MorPiece** (**MoP**) freely inspired to the [Tolerance Principle](https://lingbuzz.net/lingbuzz/004146) by Charles Yang.
-The current version (v.0.0.1) will be soon updated. We didn't use this tokenizer in the English experiments for lack of time, but this seems to us a useful contribution for rich morphological languages.
+In this directory, you will find our original tokenizer, MorPiece (MoP), which is freely inspired by the [Tolerance Principle](https://lingbuzz.net/lingbuzz/004146) proposed by Charles Yang. The current version (v.0.0.1) will be updated soon. Although we did not utilize this tokenizer in the English experiments due to time constraints, we believe it offers a valuable contribution, particularly for languages with rich morphological structures.
 
 ### 03-model_training
-Here we include our original elaboration of some standard Recurrent Neural Network architectures (**GRU** and **LSTM** models). These models are loosely inspired by certain (non-standard) processing interpretations of Minimalist Grammars ([e-MGs](https://github.com/cristianochesi/e-MGs)) with the specific intent of modeling various biases in training (using specific gate combinations) that mimic standard constraints operative in structure building, such as [C-command](http://www.glottopedia.org/index.php/C-command) and [locality](http://glottopedia.org/index.php/Locality).
+This section includes our original implementations of standard Recurrent Neural Network architectures, specifically GRU and LSTM models. These models are loosely inspired by alternative processing interpretations of Minimalist Grammars ([e-MGs](https://github.com/cristianochesi/e-MGs)). They aim to model various training biases through specific gate combinations that mimic standard constraints in structure building, such as [C-command](http://www.glottopedia.org/index.php/C-command) and [locality](http://glottopedia.org/index.php/Locality).
 
 ### 04-evaluation
-Results of the lm-eval campaign for BabyLM 2024 are included here in .json format (BLiMP task).
+Here, you will find the results of our models on the [BLiMP task](https://aclanthology.org/2020.tacl-1.25/) of the lm-eval campaign for BabyLM 2024 challenge, presented in .json format.
